@@ -31,8 +31,8 @@ namespace AngleCalculator
         public Angle(bool isNegative, double deg, double mins)
         {
             this.isNegative = isNegative;
-            Degrees = deg;
-            Minutes = mins;
+            Degrees = Math.Abs(deg);
+            Minutes = Math.Abs(mins);
         }
 
         public double ToRadian()
@@ -124,7 +124,7 @@ namespace AngleCalculator
 
         public override string ToString()
         {
-            return $"{(isNegative ? "-" : "")}{Degrees:f0}° {PrintWithPrecision(Minutes, 2)}\'";
+            return $"{(isNegative ? "-" : "")}{Degrees:f0}° {PrintWithPrecision(Minutes, 1)}\'";
         }
     }
 }
