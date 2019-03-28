@@ -33,6 +33,8 @@ namespace AngleCalculator
             Console.WriteLine("для последнего вычисленного значения");
             Console.WriteLine("Пример: \n+ [°2] ['2]");
             Console.WriteLine("Для очистки экрана можно ввести clear");
+            Console.WriteLine("Для вычисления косинуса/синуса вводим cos или sin и значение угла");
+            Console.WriteLine("Для выхода из программы пишем exit (или закрываем окно)");
             Console.WriteLine("Ссылка на GitHub: https://github.com/Flexlug/AngleCalculator");
             Console.WriteLine(new string('=', 40));
             Console.WriteLine();
